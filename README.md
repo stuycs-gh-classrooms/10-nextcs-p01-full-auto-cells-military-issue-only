@@ -17,27 +17,35 @@ This project will be completed in phases. The first phase will be to work on thi
 
 ## Phase 0: Selection, Analysis & Plan
 
-#### Selected Project: Life-like cellular automata
+#### Selected Project: Life-like cellular automata (Day & Night simulation)
 
 ### Necessary Features
 What are the core features that your program should have? These should be things that __must__ be implemented in order to make the program useable/playable, not extra features that could be added to make the program more interesting/fun.
 
-YOUR ANSWERS HERE
+- Generating a grid of cells that are initially yellow (as the background)
+- Yellow background (representing "day")
+- Purple cells (representing "night")
+- A dead cell will become born if it has 3, 6, 7, or 8 live neighbors.
+- A live cell will remain alive if it has 3, 4, 6, 7, or 8 live neighbors.
+- That means that a live cell will die, and a dead cell won't become alive, if it has less than 3 alive neighbors.
 
 ### Extra Features
 What are some features that are not essential to the program, but you would like to see (provided you have time after completing the necessary features. Theses can be customizations that are not part of the core requirements.
 
-YOUR ANSWERS HERE
+- Sky transitions depending on if it's day or night
+  - For example, when day has "dominated" the grid of cells, a sun could appear and be drawn. Then after some time, the sun would disappear and the grid of cells will slowly go back to night.
+  - Likewise, when night has "dominated" the grid of cells, a moon could appear and be drawn. Then after some time, the moon would disappear and the grid of cells will go back to day. It would be a continous cycle of change between day and night from now on.
+
+- You will also be allowed to choose which phase "dominates" first (day or night).
 
 ### Array Usage
 How will you be using arrays in this project?
 
 1D Array:
-- YOUR ANSER HERE
+- 
 
 2D Array:
-- YOUR ANSWER HERE
-
+- Using 2D arrays to generate the grid of cells, and also to draw the sun/moon on the screen depending on the phase (day or night).
 
 ### Controls
 How will your program be controlled? List all keyboard commands and mouse interactions.
