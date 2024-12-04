@@ -52,9 +52,9 @@ color one at a time, from one cell in a row to another cell in the same row. Thi
 How will your program be controlled? List all keyboard commands and mouse interactions.
 
 Keyboard Commands:
-- Press 'd' to have "day" dominate the grid first.
-- Press 'n' to have "night" dominate the grid first.
-- Press 'space' to toggle the animations/movements on/off.
+- Press `d` to have "day" dominate the grid first.
+- Press `n` to have "night" dominate the grid first.
+- Press `space` to toggle the animations/movements on/off.
 
 Mouse Control:
 - Mouse movement: Change the area in which "day" or "night" is dominating. If the mouse isn't moving, then the area will be randomly chosen.
@@ -67,7 +67,7 @@ Cell
 - Instance variables:
   - `x`, `y`, `size`, `color`
 - METHODS
-  - `display()`, `updateColor()`, 
+  - `display()`, `updateColor()`
 
 Grid
 - Instance variables:
