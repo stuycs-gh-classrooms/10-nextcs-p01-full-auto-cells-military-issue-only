@@ -42,33 +42,35 @@ What are some features that are not essential to the program, but you would like
 How will you be using arrays in this project?
 
 1D Array:
-- 
+- We will be using 1-D arrays to draw the sun/moon on the screen depending on the phase (day or night). Selected cells in a row will change
+color one at a time, from one cell in a row to another cell in the same row. This way, the sun/moon will be drawn in steps, giving a nice cool effect.
 
 2D Array:
-- Using 2D arrays to generate the grid of cells, and also to draw the sun/moon on the screen depending on the phase (day or night).
+- Using 2D arrays to generate the grid of cells, which will be the background.
 
 ### Controls
 How will your program be controlled? List all keyboard commands and mouse interactions.
 
 Keyboard Commands:
-- LIST OF COMMANDS HERE
+- Press 'd' to have "day" dominate the grid first.
+- Press 'n' to have "night" dominate the grid first.
+- Press 'space' to toggle the animations/movements on/off.
 
 Mouse Control:
-- Mouse movement:
-- Mouse pressed:
-
+- Mouse movement: Change the area in which "day" or "night" is dominating. If the mouse isn't moving, then the area will be randomly chosen.
+- Mouse pressed: When the mouse is pressed, a cell will change to the opposite color, which will affect the entire animation.
 
 ### Classes
 What classes will you be creating for this project? Include the instance variables and methods that you believe you will need. You will be required to create at least 2 different classes. If you are going to use classes similar to those we've made for previous assignments, you will have to add new features to them.
 
-CLASS NAME0
+Cell
 - Instance variables:
-  - LIST INSTANCE VARS HERE
+  - `x`, `y`, `size`, `color`
 - METHODS
-  - LIST METHODS HERE
+  - `display()`, `updateColor()`, 
 
-CLASS NAME1
+Grid
 - Instance variables:
-  - LIST INSTANCE VARS HERE
+  - `rows`, `cols`, `state`
 - METHODS
-  - LIST METHODS HERE
+  - `createGrid()`, `showGrid()`, `animate()`, `changeState()`
