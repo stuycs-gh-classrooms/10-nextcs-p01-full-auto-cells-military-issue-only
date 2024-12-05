@@ -65,7 +65,7 @@ What classes will you be creating for this project? Include the instance variabl
 
 Cell
 - Instance variables:
-  - `x`, `y`, `size`, `color`
+  - `position`, `size`, `color`
 - METHODS
   - `display()`, `updateColor()`
 
