@@ -25,12 +25,12 @@ What are the core features that your program should have? These should be things
 - Generating a grid of cells that are initially yellow (as the background)
 - Yellow background (representing "day")
 - Purple cells (representing "night")
-- A dead cell will become born if it has 3, 6, 7, or 8 live neighbors.
-- A live cell will remain alive if it has 3, 4, 6, 7, or 8 live neighbors.
-- That means that a live cell will die, and a dead cell won't become alive, if it has less than 3 alive neighbors.
+- A cell that's "night" will become "day" if it has 3, 6, 7, or 8 neighbors that are "day".
+- A cell that's "day" will remain as "day" if it has 3, 4, 6, 7, or 8 neighbors that are "day".
+- That means that a cell that's "day" will become "night", and a cell that's "night" will stay as "night", if it has less than 3 neighbors that are "day".
 
 ### Extra Features
-What are some features that are not essential to the program, but you would like to see (provided you have time after completing the necessary features. Theses can be customizations that are not part of the core requirements.
+What are some features that are not essential to the program, but you would like to see (provided you have time after completing the necessary features. These can be customizations that are not part of the core requirements.
 
 - Sky transitions depending on if it's day or night
   - For example, when day has "dominated" the grid of cells, a sun could appear and be drawn. Then after some time, the sun would disappear and the grid of cells will slowly go back to night.
